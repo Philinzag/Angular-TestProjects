@@ -1,0 +1,5 @@
+<div>
+  @for(movie of movies; track movie.id){
+    <img [src]="getfullimageURL(movie.poster_path)" alt="" srcset="">  <h3>{{movie.original_title}}</h3>
+  }
+</div>
