@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'noAPIkey' title`, () => {
+  it(`should have the 'APIwithkeys' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('noAPIkey');
+    expect(app.title).toEqual('APIwithkeys');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, noAPIkey');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, APIwithkeys');
   });
 });
